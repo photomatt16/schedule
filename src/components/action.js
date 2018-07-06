@@ -4,10 +4,10 @@ import Icon from './icon';
 class Action extends Component {
     render() {
         return (
-            <div className={`${this.props.className} Action`}>
+            <button onClick={() => this.props.onClick()} className={`${this.props.className} Action`}>
                 { Icon('fas fa-plus-circle') }
                 {/* fas fa-times-circle */}
-            </div>
+            </button>
         )
     }
 }
